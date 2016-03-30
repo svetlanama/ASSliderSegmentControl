@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A43E2EEF2ED2E588E3D2FF9EA6D0D82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		34EE0394FE47F950BC9614C2C205B030 /* ASSliderSegmentControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D08D0DD326B6BEC7147C483ACCAD2D7 /* ASSliderSegmentControl-dummy.m */; };
+		5D9F6C615F2DB34B628A2E6617D22DE1 /* Pods-ASSliderSegmentControl_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8162B6A5867D7919AC02E73E53CC2925 /* Pods-ASSliderSegmentControl_Tests-dummy.m */; };
+		6C2767FD9BD16EBDDA5A9245C913E4F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		6F04CCBF4B0C061C790F0FF5A468D94A /* Pods-ASSliderSegmentControl_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A077BB36DB2CF4A499DB28A87DEC0532 /* Pods-ASSliderSegmentControl_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8395008D2ECEB5E8DC3C1350B266D368 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		CA40C510CADF4A79B87B9B512FE76CF8 /* ASSliderSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50834120D561DA4280DEABE479ABB6E /* ASSliderSegmentControl.swift */; };
+		CEB227A50B33A2988762958EBF6B1791 /* Pods-ASSliderSegmentControl_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7004F8DE849CD4C08BF1F8914604AAAD /* Pods-ASSliderSegmentControl_Example-dummy.m */; };
+		D16B725BC509E113D26D1DE25FE4CE4B /* Pods-ASSliderSegmentControl_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C047B7D61D665A3F32264AD2D0B1279 /* Pods-ASSliderSegmentControl_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D73D24023750E1EE598EBD9081C93790 /* ASSliderSegmentControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0E6D22EC3758B3FEEC88937518D911 /* ASSliderSegmentControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C42FCCEA90656A96A4F15DE97A2749A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBA0EE883E422243B8116D906F5B6F04;
+			remoteInfo = "ASSliderSegmentControl-ASSliderSegmentControl";
+		};
+		6E9D4100C44FCBB5EE9F673F314C968E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7750E8B0C107C8EC00190E678C8116C5;
+			remoteInfo = ASSliderSegmentControl;
+		};
+		BFB2E2232E5E938DE2FB1122B5722615 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7750E8B0C107C8EC00190E678C8116C5;
+			remoteInfo = ASSliderSegmentControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05C17B43873F464F373AEDB801683312 /* Pods-ASSliderSegmentControl_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASSliderSegmentControl_Tests-resources.sh"; sourceTree = "<group>"; };
+		0C047B7D61D665A3F32264AD2D0B1279 /* Pods-ASSliderSegmentControl_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ASSliderSegmentControl_Example-umbrella.h"; sourceTree = "<group>"; };
+		0E74490AC549B698405BAEF299C6B54E /* Pods-ASSliderSegmentControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASSliderSegmentControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E2300674C0E027DDB7793EA3BA5B616 /* Pods-ASSliderSegmentControl_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASSliderSegmentControl_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A7BE0357BBFB4D5EAD15B55D26F4E9F /* Pods-ASSliderSegmentControl_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ASSliderSegmentControl_Example.modulemap"; sourceTree = "<group>"; };
+		3F3AED1E88CFBDCA692687A449E65872 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40D0CC7E06476162E047779FE22DA0AA /* ASSliderSegmentControl.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASSliderSegmentControl.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		480D37316BC038745F126FC0D839220C /* Pods-ASSliderSegmentControl_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ASSliderSegmentControl_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		487F61E696C3CCD2517CAF364390673D /* Pods-ASSliderSegmentControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASSliderSegmentControl_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4A84F36D62F12473066DE2716C65E119 /* Pods_ASSliderSegmentControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASSliderSegmentControl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D08D0DD326B6BEC7147C483ACCAD2D7 /* ASSliderSegmentControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASSliderSegmentControl-dummy.m"; sourceTree = "<group>"; };
+		56E74BB7748FF46E9F338A99222BAA78 /* ASSliderSegmentControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASSliderSegmentControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61775607FDB99951C78D5DFA12011AF5 /* Pods-ASSliderSegmentControl_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASSliderSegmentControl_Example-resources.sh"; sourceTree = "<group>"; };
+		62930140EF14CED75FA388906C2BDAAA /* Pods_ASSliderSegmentControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASSliderSegmentControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7004F8DE849CD4C08BF1F8914604AAAD /* Pods-ASSliderSegmentControl_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ASSliderSegmentControl_Example-dummy.m"; sourceTree = "<group>"; };
+		75AA435B61BBA4826BE1673FD2F2257A /* Pods-ASSliderSegmentControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASSliderSegmentControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8162B6A5867D7919AC02E73E53CC2925 /* Pods-ASSliderSegmentControl_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ASSliderSegmentControl_Tests-dummy.m"; sourceTree = "<group>"; };
+		8AA43A5B40ED4462A3790B0AF9652543 /* Pods-ASSliderSegmentControl_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASSliderSegmentControl_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8C0E6D22EC3758B3FEEC88937518D911 /* ASSliderSegmentControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASSliderSegmentControl-umbrella.h"; sourceTree = "<group>"; };
+		90036484EE10B5B03032CB30062588B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B459D9D4E5221DCC1CF315E5F3D60E2 /* Pods-ASSliderSegmentControl_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ASSliderSegmentControl_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9DD7AED3507C976BFCCC34C63FD8DF30 /* Pods-ASSliderSegmentControl_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ASSliderSegmentControl_Tests.modulemap"; sourceTree = "<group>"; };
+		A077BB36DB2CF4A499DB28A87DEC0532 /* Pods-ASSliderSegmentControl_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ASSliderSegmentControl_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A2C47D8257C3801D3573A3655B4C3F9B /* ResourceBundle-ASSliderSegmentControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ASSliderSegmentControl-Info.plist"; sourceTree = "<group>"; };
+		AA89845898CA0DD6D31D383B5FF740D6 /* Pods-ASSliderSegmentControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASSliderSegmentControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		ABCF766DA9C922340998CF06F67668BB /* Pods-ASSliderSegmentControl_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ASSliderSegmentControl_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B17A194B8044167F36CBB90B134221D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C51DEC1E3E7B698EABC324D94E454ED7 /* ASSliderSegmentControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASSliderSegmentControl-prefix.pch"; sourceTree = "<group>"; };
+		C6AD81EC1FF2D675D37C1693CB68C7DB /* ASSliderSegmentControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ASSliderSegmentControl.modulemap; sourceTree = "<group>"; };
+		F50834120D561DA4280DEABE479ABB6E /* ASSliderSegmentControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASSliderSegmentControl.swift; sourceTree = "<group>"; };
+		F6A9DF9A3DDE645435CDACDE22E65ED3 /* ASSliderSegmentControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASSliderSegmentControl.xcconfig; sourceTree = "<group>"; };
+		F84FE0EEF85AE49E73C34FDE7F2A70FE /* Pods-ASSliderSegmentControl_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ASSliderSegmentControl_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20E7D46C377745E5A538FC6E798BFB8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8395008D2ECEB5E8DC3C1350B266D368 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35076C5D529AD11C6C43621DB03EEF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A43E2EEF2ED2E588E3D2FF9EA6D0D82 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE870F0373566873CE2897499BC7432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC9BA206668CC568C434A6CACD025CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C2767FD9BD16EBDDA5A9245C913E4F4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		112C7921E3A497328D11F4930CBBC9CA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3B63C3A2C40767A124E2717E25718439 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAC50302CFA2DE7C469DE92B6211C916 /* Pods-ASSliderSegmentControl_Example */,
+				C5798CFFB8D412696B9629A1B5324B86 /* Pods-ASSliderSegmentControl_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3E5F98BDEE0D7397F778509F36F7DEC3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEA6E77403BC54E680D8DA0735B42460 /* ASSliderSegmentControl */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6920856483746A01EB11039CAF86F633 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40D0CC7E06476162E047779FE22DA0AA /* ASSliderSegmentControl.bundle */,
+				56E74BB7748FF46E9F338A99222BAA78 /* ASSliderSegmentControl.framework */,
+				62930140EF14CED75FA388906C2BDAAA /* Pods_ASSliderSegmentControl_Example.framework */,
+				4A84F36D62F12473066DE2716C65E119 /* Pods_ASSliderSegmentControl_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				3E5F98BDEE0D7397F778509F36F7DEC3 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6920856483746A01EB11039CAF86F633 /* Products */,
+				3B63C3A2C40767A124E2717E25718439 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BAC50302CFA2DE7C469DE92B6211C916 /* Pods-ASSliderSegmentControl_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AED1E88CFBDCA692687A449E65872 /* Info.plist */,
+				3A7BE0357BBFB4D5EAD15B55D26F4E9F /* Pods-ASSliderSegmentControl_Example.modulemap */,
+				ABCF766DA9C922340998CF06F67668BB /* Pods-ASSliderSegmentControl_Example-acknowledgements.markdown */,
+				480D37316BC038745F126FC0D839220C /* Pods-ASSliderSegmentControl_Example-acknowledgements.plist */,
+				7004F8DE849CD4C08BF1F8914604AAAD /* Pods-ASSliderSegmentControl_Example-dummy.m */,
+				8AA43A5B40ED4462A3790B0AF9652543 /* Pods-ASSliderSegmentControl_Example-frameworks.sh */,
+				61775607FDB99951C78D5DFA12011AF5 /* Pods-ASSliderSegmentControl_Example-resources.sh */,
+				0C047B7D61D665A3F32264AD2D0B1279 /* Pods-ASSliderSegmentControl_Example-umbrella.h */,
+				75AA435B61BBA4826BE1673FD2F2257A /* Pods-ASSliderSegmentControl_Example.debug.xcconfig */,
+				487F61E696C3CCD2517CAF364390673D /* Pods-ASSliderSegmentControl_Example.release.xcconfig */,
+			);
+			name = "Pods-ASSliderSegmentControl_Example";
+			path = "Target Support Files/Pods-ASSliderSegmentControl_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				112C7921E3A497328D11F4930CBBC9CA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEA6E77403BC54E680D8DA0735B42460 /* ASSliderSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				CD2B09603D6BD96A5BCE29C589D9B271 /* Pod */,
+				DC5D4B0D0DB2E45B61DBDA16061889A1 /* Support Files */,
+			);
+			name = ASSliderSegmentControl;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C5798CFFB8D412696B9629A1B5324B86 /* Pods-ASSliderSegmentControl_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B17A194B8044167F36CBB90B134221D0 /* Info.plist */,
+				9DD7AED3507C976BFCCC34C63FD8DF30 /* Pods-ASSliderSegmentControl_Tests.modulemap */,
+				F84FE0EEF85AE49E73C34FDE7F2A70FE /* Pods-ASSliderSegmentControl_Tests-acknowledgements.markdown */,
+				9B459D9D4E5221DCC1CF315E5F3D60E2 /* Pods-ASSliderSegmentControl_Tests-acknowledgements.plist */,
+				8162B6A5867D7919AC02E73E53CC2925 /* Pods-ASSliderSegmentControl_Tests-dummy.m */,
+				1E2300674C0E027DDB7793EA3BA5B616 /* Pods-ASSliderSegmentControl_Tests-frameworks.sh */,
+				05C17B43873F464F373AEDB801683312 /* Pods-ASSliderSegmentControl_Tests-resources.sh */,
+				A077BB36DB2CF4A499DB28A87DEC0532 /* Pods-ASSliderSegmentControl_Tests-umbrella.h */,
+				0E74490AC549B698405BAEF299C6B54E /* Pods-ASSliderSegmentControl_Tests.debug.xcconfig */,
+				AA89845898CA0DD6D31D383B5FF740D6 /* Pods-ASSliderSegmentControl_Tests.release.xcconfig */,
+			);
+			name = "Pods-ASSliderSegmentControl_Tests";
+			path = "Target Support Files/Pods-ASSliderSegmentControl_Tests";
+			sourceTree = "<group>";
+		};
+		CD2B09603D6BD96A5BCE29C589D9B271 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CF78F5A4BD8EF0832828F5C494DFB36C /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		CF78F5A4BD8EF0832828F5C494DFB36C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F50834120D561DA4280DEABE479ABB6E /* ASSliderSegmentControl.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DC5D4B0D0DB2E45B61DBDA16061889A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6AD81EC1FF2D675D37C1693CB68C7DB /* ASSliderSegmentControl.modulemap */,
+				F6A9DF9A3DDE645435CDACDE22E65ED3 /* ASSliderSegmentControl.xcconfig */,
+				4D08D0DD326B6BEC7147C483ACCAD2D7 /* ASSliderSegmentControl-dummy.m */,
+				C51DEC1E3E7B698EABC324D94E454ED7 /* ASSliderSegmentControl-prefix.pch */,
+				8C0E6D22EC3758B3FEEC88937518D911 /* ASSliderSegmentControl-umbrella.h */,
+				90036484EE10B5B03032CB30062588B9 /* Info.plist */,
+				A2C47D8257C3801D3573A3655B4C3F9B /* ResourceBundle-ASSliderSegmentControl-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ASSliderSegmentControl";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		15B8E1ED5AF95277E8213F08181FF0BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73D24023750E1EE598EBD9081C93790 /* ASSliderSegmentControl-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		293BA5D5162F7D293772498C0DD39C00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D16B725BC509E113D26D1DE25FE4CE4B /* Pods-ASSliderSegmentControl_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94075356B95A67E76651A846283F9025 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F04CCBF4B0C061C790F0FF5A468D94A /* Pods-ASSliderSegmentControl_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7750E8B0C107C8EC00190E678C8116C5 /* ASSliderSegmentControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E70C1BEB88AAAF27F38EC9514693D4FA /* Build configuration list for PBXNativeTarget "ASSliderSegmentControl" */;
+			buildPhases = (
+				2BE2C3C04A060223998AAD1E9CBCCA65 /* Sources */,
+				20E7D46C377745E5A538FC6E798BFB8C /* Frameworks */,
+				FF117EC2E75321ACF07071C1EAED182D /* Resources */,
+				15B8E1ED5AF95277E8213F08181FF0BF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				158B38856474C7FD4FADD5EE442B0F52 /* PBXTargetDependency */,
+			);
+			name = ASSliderSegmentControl;
+			productName = ASSliderSegmentControl;
+			productReference = 56E74BB7748FF46E9F338A99222BAA78 /* ASSliderSegmentControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		938F6E83627B5EB1131BB8A401360211 /* Pods-ASSliderSegmentControl_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7FC63725EA740E1C1FEB48086C083DD /* Build configuration list for PBXNativeTarget "Pods-ASSliderSegmentControl_Example" */;
+			buildPhases = (
+				B659CBF9ADF46A498AFE96CE1DD57C88 /* Sources */,
+				35076C5D529AD11C6C43621DB03EEF2E /* Frameworks */,
+				293BA5D5162F7D293772498C0DD39C00 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A724583381C3D87594719C585EFE90D9 /* PBXTargetDependency */,
+			);
+			name = "Pods-ASSliderSegmentControl_Example";
+			productName = "Pods-ASSliderSegmentControl_Example";
+			productReference = 62930140EF14CED75FA388906C2BDAAA /* Pods_ASSliderSegmentControl_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D688BCE807185C0803DD831CF497CDD3 /* Pods-ASSliderSegmentControl_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DC649F0ACB57043F60662D44D3C46A1 /* Build configuration list for PBXNativeTarget "Pods-ASSliderSegmentControl_Tests" */;
+			buildPhases = (
+				7074C94AC7E801236084E6606653112B /* Sources */,
+				CBC9BA206668CC568C434A6CACD025CF /* Frameworks */,
+				94075356B95A67E76651A846283F9025 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BE8C9E38AD4D1BC665EFEA7E5172502 /* PBXTargetDependency */,
+			);
+			name = "Pods-ASSliderSegmentControl_Tests";
+			productName = "Pods-ASSliderSegmentControl_Tests";
+			productReference = 4A84F36D62F12473066DE2716C65E119 /* Pods_ASSliderSegmentControl_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DBA0EE883E422243B8116D906F5B6F04 /* ASSliderSegmentControl-ASSliderSegmentControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF651931CE4EB32E31C683CCFBFA636 /* Build configuration list for PBXNativeTarget "ASSliderSegmentControl-ASSliderSegmentControl" */;
+			buildPhases = (
+				71758BDCA056C2B9FF19E2FA83327C1A /* Sources */,
+				9FE870F0373566873CE2897499BC7432 /* Frameworks */,
+				6A8D246FDEBB4A219351E96E201D4119 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ASSliderSegmentControl-ASSliderSegmentControl";
+			productName = "ASSliderSegmentControl-ASSliderSegmentControl";
+			productReference = 40D0CC7E06476162E047779FE22DA0AA /* ASSliderSegmentControl.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6920856483746A01EB11039CAF86F633 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7750E8B0C107C8EC00190E678C8116C5 /* ASSliderSegmentControl */,
+				DBA0EE883E422243B8116D906F5B6F04 /* ASSliderSegmentControl-ASSliderSegmentControl */,
+				938F6E83627B5EB1131BB8A401360211 /* Pods-ASSliderSegmentControl_Example */,
+				D688BCE807185C0803DD831CF497CDD3 /* Pods-ASSliderSegmentControl_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A8D246FDEBB4A219351E96E201D4119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF117EC2E75321ACF07071C1EAED182D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BE2C3C04A060223998AAD1E9CBCCA65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34EE0394FE47F950BC9614C2C205B030 /* ASSliderSegmentControl-dummy.m in Sources */,
+				CA40C510CADF4A79B87B9B512FE76CF8 /* ASSliderSegmentControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7074C94AC7E801236084E6606653112B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9F6C615F2DB34B628A2E6617D22DE1 /* Pods-ASSliderSegmentControl_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71758BDCA056C2B9FF19E2FA83327C1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B659CBF9ADF46A498AFE96CE1DD57C88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB227A50B33A2988762958EBF6B1791 /* Pods-ASSliderSegmentControl_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		158B38856474C7FD4FADD5EE442B0F52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ASSliderSegmentControl-ASSliderSegmentControl";
+			target = DBA0EE883E422243B8116D906F5B6F04 /* ASSliderSegmentControl-ASSliderSegmentControl */;
+			targetProxy = 1C42FCCEA90656A96A4F15DE97A2749A /* PBXContainerItemProxy */;
+		};
+		5BE8C9E38AD4D1BC665EFEA7E5172502 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ASSliderSegmentControl;
+			target = 7750E8B0C107C8EC00190E678C8116C5 /* ASSliderSegmentControl */;
+			targetProxy = BFB2E2232E5E938DE2FB1122B5722615 /* PBXContainerItemProxy */;
+		};
+		A724583381C3D87594719C585EFE90D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ASSliderSegmentControl;
+			target = 7750E8B0C107C8EC00190E678C8116C5 /* ASSliderSegmentControl */;
+			targetProxy = 6E9D4100C44FCBB5EE9F673F314C968E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C5E1DE7334DB16357C9F359FFAC4AAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75AA435B61BBA4826BE1673FD2F2257A /* Pods-ASSliderSegmentControl_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ASSliderSegmentControl_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ASSliderSegmentControl_Example/Pods-ASSliderSegmentControl_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ASSliderSegmentControl_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		46062BFF1FB00B2B30B989792A0AA86E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A9DF9A3DDE645435CDACDE22E65ED3 /* ASSliderSegmentControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ASSliderSegmentControl/ASSliderSegmentControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ASSliderSegmentControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ASSliderSegmentControl/ASSliderSegmentControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ASSliderSegmentControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4D066E0F990E5B926B82AE49DAFD6C27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A9DF9A3DDE645435CDACDE22E65ED3 /* ASSliderSegmentControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ASSliderSegmentControl/ASSliderSegmentControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ASSliderSegmentControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ASSliderSegmentControl/ASSliderSegmentControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ASSliderSegmentControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63B429B9662F91C9027CC391BEC7EB50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA89845898CA0DD6D31D383B5FF740D6 /* Pods-ASSliderSegmentControl_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ASSliderSegmentControl_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ASSliderSegmentControl_Tests/Pods-ASSliderSegmentControl_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ASSliderSegmentControl_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		767A3A614382A04C1D2F371A6031E87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 487F61E696C3CCD2517CAF364390673D /* Pods-ASSliderSegmentControl_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ASSliderSegmentControl_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ASSliderSegmentControl_Example/Pods-ASSliderSegmentControl_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ASSliderSegmentControl_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		811519CB8F683AC06F9C98B55AC40F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83B3A944EA9B667F72BA489DEEFD0E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A9DF9A3DDE645435CDACDE22E65ED3 /* ASSliderSegmentControl.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR/ASSliderSegmentControl;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/ASSliderSegmentControl/ResourceBundle-ASSliderSegmentControl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ASSliderSegmentControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		882EB4391EC2E701934974DA86F7343F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A71ED40AC6FA28C902C7FF749851986A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E74490AC549B698405BAEF299C6B54E /* Pods-ASSliderSegmentControl_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ASSliderSegmentControl_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ASSliderSegmentControl_Tests/Pods-ASSliderSegmentControl_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ASSliderSegmentControl_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F96F192F74FF3A8D164B1ED0BEF4F2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A9DF9A3DDE645435CDACDE22E65ED3 /* ASSliderSegmentControl.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR/ASSliderSegmentControl;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/ASSliderSegmentControl/ResourceBundle-ASSliderSegmentControl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ASSliderSegmentControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				882EB4391EC2E701934974DA86F7343F /* Debug */,
+				811519CB8F683AC06F9C98B55AC40F11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DC649F0ACB57043F60662D44D3C46A1 /* Build configuration list for PBXNativeTarget "Pods-ASSliderSegmentControl_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71ED40AC6FA28C902C7FF749851986A /* Debug */,
+				63B429B9662F91C9027CC391BEC7EB50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7FC63725EA740E1C1FEB48086C083DD /* Build configuration list for PBXNativeTarget "Pods-ASSliderSegmentControl_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C5E1DE7334DB16357C9F359FFAC4AAB /* Debug */,
+				767A3A614382A04C1D2F371A6031E87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E70C1BEB88AAAF27F38EC9514693D4FA /* Build configuration list for PBXNativeTarget "ASSliderSegmentControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46062BFF1FB00B2B30B989792A0AA86E /* Debug */,
+				4D066E0F990E5B926B82AE49DAFD6C27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF651931CE4EB32E31C683CCFBFA636 /* Build configuration list for PBXNativeTarget "ASSliderSegmentControl-ASSliderSegmentControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F96F192F74FF3A8D164B1ED0BEF4F2B2 /* Debug */,
+				83B3A944EA9B667F72BA489DEEFD0E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

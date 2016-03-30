@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'ASSliderSegmentControl_Example' do
+  pod 'ASSliderSegmentControl', :path => '../'
+end
+
+target 'ASSliderSegmentControl_Tests' do
+  pod 'ASSliderSegmentControl', :path => '../'
+
+  
+end

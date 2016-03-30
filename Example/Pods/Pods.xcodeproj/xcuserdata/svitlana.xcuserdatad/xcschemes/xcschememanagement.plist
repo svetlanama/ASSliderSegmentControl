@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ASSliderSegmentControl-ASSliderSegmentControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ASSliderSegmentControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ASSliderSegmentControl_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ASSliderSegmentControl_Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7750E8B0C107C8EC00190E678C8116C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>938F6E83627B5EB1131BB8A401360211</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D688BCE807185C0803DD831CF497CDD3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBA0EE883E422243B8116D906F5B6F04</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

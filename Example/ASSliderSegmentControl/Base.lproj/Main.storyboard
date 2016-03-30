@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i3U-1c-Ojn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="qtj-pC-naI">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Tmc-PL-tP8" customClass="PageViewController" customModule="ASSliderSegmentControl_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfi-BO-fTR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537.5" y="319.5"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="lvG-MW-sFv">
+            <objects>
+                <viewController storyboardIdentifier="first_vc" id="5A2-8V-ayd" customClass="FirstViewController" customModule="ASSliderSegmentControl_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="99s-Ur-gRl"/>
+                        <viewControllerLayoutGuide type="bottom" id="fRU-d0-XPE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Eo-Z4-ehk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.67450982329999998" green="0.79215693470000004" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4qu-Kx-0tT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45.5" y="1116.5"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="PwB-sA-Zux">
+            <objects>
+                <viewController storyboardIdentifier="second_vc" id="7D2-I2-Epj" customClass="SecondViewController" customModule="ASSliderSegmentControl_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zin-W9-h6C"/>
+                        <viewControllerLayoutGuide type="bottom" id="ngb-fJ-R2w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="18D-uB-rx4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Odg-9q-zub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368.5" y="1116.5"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="8hV-GN-gY6">
+            <objects>
+                <viewController id="i3U-1c-Ojn" customClass="MainViewController" customModule="ASSliderSegmentControl_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zKg-dZ-ylq"/>
+                        <viewControllerLayoutGuide type="bottom" id="fbq-Kr-oNt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RbF-KZ-zFV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLJ-Nq-7Lq">
+                                <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                                <connections>
+                                    <segue destination="Tmc-PL-tP8" kind="embed" id="Qlp-ye-siP"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGY-Ws-8E3" userLabel="NavigationView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="a2Y-Hp-7rO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cs2-ru-wH4" userLabel="NavigationView">
+                                <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="gN7-jB-RRj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cs2-ru-wH4" secondAttribute="trailing" id="A74-SR-2bA"/>
+                            <constraint firstItem="aLJ-Nq-7Lq" firstAttribute="top" secondItem="JGY-Ws-8E3" secondAttribute="bottom" id="SG0-ut-jzq"/>
+                            <constraint firstAttribute="trailing" secondItem="aLJ-Nq-7Lq" secondAttribute="trailing" id="SaE-K7-tOC"/>
+                            <constraint firstItem="JGY-Ws-8E3" firstAttribute="top" secondItem="RbF-KZ-zFV" secondAttribute="top" id="a0d-dC-W4W"/>
+                            <constraint firstItem="cs2-ru-wH4" firstAttribute="leading" secondItem="RbF-KZ-zFV" secondAttribute="leading" id="ey2-XD-cim"/>
+                            <constraint firstItem="aLJ-Nq-7Lq" firstAttribute="leading" secondItem="RbF-KZ-zFV" secondAttribute="leading" id="f7L-2m-5EV"/>
+                            <constraint firstAttribute="trailing" secondItem="JGY-Ws-8E3" secondAttribute="trailing" id="mDO-6c-Bnu"/>
+                            <constraint firstItem="JGY-Ws-8E3" firstAttribute="leading" secondItem="RbF-KZ-zFV" secondAttribute="leading" id="olC-tM-gyD"/>
+                            <constraint firstItem="fbq-Kr-oNt" firstAttribute="top" secondItem="cs2-ru-wH4" secondAttribute="bottom" id="tEB-GY-hJw"/>
+                            <constraint firstItem="fbq-Kr-oNt" firstAttribute="top" secondItem="aLJ-Nq-7Lq" secondAttribute="bottom" id="x23-FW-cba"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="containerView" destination="aLJ-Nq-7Lq" id="P9A-sN-aSy"/>
+                        <outlet property="navigationView" destination="JGY-Ws-8E3" id="C7u-z3-b6g"/>
+                        <outlet property="navigationViewBottom" destination="cs2-ru-wH4" id="e2F-6P-ZAi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJt-eA-YFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81.5" y="319.5"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="8Pb-7P-Rby">
+            <objects>
+                <viewController storyboardIdentifier="third_vc" id="cxS-yT-3Kx" customClass="ThirdViewController" customModule="ASSliderSegmentControl_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rDK-fN-Bng"/>
+                        <viewControllerLayoutGuide type="bottom" id="HDs-Dt-kHt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pqj-oz-QvF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.74117648599999997" green="0.90196084980000002" blue="0.44705885649999999" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="95S-RN-0eu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="787.5" y="1116.5"/>
+        </scene>
+    </scenes>
+</document>

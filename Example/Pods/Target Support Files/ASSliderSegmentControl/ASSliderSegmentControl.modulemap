@@ -1,0 +1,6 @@
+framework module ASSliderSegmentControl {
+  umbrella header "ASSliderSegmentControl-umbrella.h"
+
+  export *
+  module * { export * }
+}
