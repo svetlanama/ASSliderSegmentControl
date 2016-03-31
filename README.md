@@ -23,6 +23,7 @@ pod "ASSliderSegmentControl"
 ## Author
 
 Svitlana Moiseyenko, alexandrovna.sveta@gmail.com
+Alexander Vasileyko, vasileyko.alex@gmail.com
 
 ## License
 

@@ -19,9 +19,9 @@ Pod::Spec.new do |s|
   s.description      = "The customized segment control allow to make switching between segment with sliding effect"
 
   s.homepage         = "https://github.com/svetlanama/ASSliderSegmentControl"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  # s.screenshots     = "https://github.com/svetlanama/ASSliderSegmentControl/demo/demo.png", "https://github.com/svetlanama/ASSliderSegmentControl/demo/animation12.gif"
   s.license          = 'MIT'
-  s.author           = { "Svitlana Moiseyenko" => "alexandrovna.sveta@gmail.com" }
+  s.author           = { "Svitlana Moiseyenko" => "alexandrovna.sveta@gmail.com", "Alexander Vasileyko" => "vasileyko.alex@gmail.com" }
   s.source           = { :git => "https://github.com/svetlanama/ASSliderSegmentControl.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/svetlana_ma'
 
