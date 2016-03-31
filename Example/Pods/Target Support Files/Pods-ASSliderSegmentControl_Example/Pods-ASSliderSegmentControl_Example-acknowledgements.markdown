@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## ASSliderSegmentControl
 
-Copyright (c) 2016 Svitlana Moiseyenko <alexandrovna.sveta@gmail.com>
+Copyright (c) 2016 Alxander Vasileyko <vasileyko.alex@gmail.com> and Svitlana Moiseyenko <alexandrovna.sveta@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,5 +1,5 @@
 PODS:
-  - ASSliderSegmentControl (0.1.0)
+  - ASSliderSegmentControl (0.4.0)
 
 DEPENDENCIES:
   - ASSliderSegmentControl (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ASSliderSegmentControl: 18b4fc89af270ab3e44a44c961faea85e2dd5f9a
+  ASSliderSegmentControl: 46c7c96b8e663fa7e7ef98221ddddd140d0d7530
 
-PODFILE CHECKSUM: e0ae54f642d4daccb154208bf6ff16bcd3550d95
+PODFILE CHECKSUM: 663656bb34c69c2b582fe51db787484a15efb1f6
 
 COCOAPODS: 1.0.0.beta.6

@@ -51,6 +51,7 @@
 		A25BB9EEBAF5948F7840C1B0 /* ASSliderSegmentControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ASSliderSegmentControl.podspec; path = ../ASSliderSegmentControl.podspec; sourceTree = "<group>"; };
 		E451665391B82C785668CEAE /* Pods-ASSliderSegmentControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASSliderSegmentControl_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASSliderSegmentControl_Tests/Pods-ASSliderSegmentControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E7AEF3A4417983FE3BF67727 /* Pods-ASSliderSegmentControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASSliderSegmentControl_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASSliderSegmentControl_Example/Pods-ASSliderSegmentControl_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EA364BF41CACB1EA0063FAF8 /* ASSliderSegmentControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASSliderSegmentControl.framework; path = "../../../Library/Developer/Xcode/DerivedData/ASSliderSegmentControl-aarmxrdtzmweesdnkslukoyouqxw/Build/Products/Debug-iphonesimulator/ASSliderSegmentControl/ASSliderSegmentControl.framework"; sourceTree = "<group>"; };
 		EA3F41B41CAC665F00D3D035 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = ViewControllers/FirstViewController.swift; sourceTree = "<group>"; };
 		EA3F41B51CAC665F00D3D035 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ViewControllers/MainViewController.swift; sourceTree = "<group>"; };
 		EA3F41B61CAC665F00D3D035 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = ViewControllers/PageViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +165,7 @@
 		BC6FDD5B2249140800063331 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA364BF41CACB1EA0063FAF8 /* ASSliderSegmentControl.framework */,
 				973CA7936CB324227A03A748 /* Pods_ASSliderSegmentControl_Example.framework */,
 				531459C0D704E099B84D03D0 /* Pods_ASSliderSegmentControl_Tests.framework */,
 			);
