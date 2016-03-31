@@ -11,8 +11,12 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+  @IBOutlet weak var contentView: UIView!
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    contentView.backgroundColor = UIColor(named: UIColor.AppColor.BermudaGray)
+    view.backgroundColor = UIColor(named: UIColor.AppColor.BisonHide)
   }
 
 }

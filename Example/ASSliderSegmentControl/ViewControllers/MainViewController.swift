@@ -48,12 +48,12 @@ class MainViewController: UIViewController {
       segmentControl.changeControlStyle (
           UIColor.clearColor(),
           selectedBackgroundColor: UIColor.clearColor(),
-          textColor: UIColor(named: UIColor.AppColor.Beige).colorWithAlphaComponent(0.3),
+          textColor: UIColor(named: UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.3),
           font: UIFont(name: "Helvetica", size: 17)!,
-          selectedTextColor: UIColor(named: UIColor.AppColor.BoringGreen),
+          selectedTextColor: UIColor(named: UIColor.AppColor.BisonHide),
           selectedFont:UIFont(name: "Helvetica", size: 17)!,
-          bottomLineColor: UIColor(named: UIColor.AppColor.StormDust),
-          selectorColor: UIColor(named: UIColor.AppColor.BoringGreen),
+          bottomLineColor: UIColor(named: UIColor.AppColor.LinkWater),
+          selectorColor: UIColor(named: UIColor.AppColor.BisonHide),
           bottomLineHeight: 0.5,
           selectorHeight: 3
       )
@@ -77,14 +77,14 @@ class MainViewController: UIViewController {
    UIImage(named: "settings")!
    ],
    imageItemsHighlighted: [
-   UIImage(named: "search_selected_green")!,
-   UIImage(named: "home_selected_green")!,
-   UIImage(named: "settings_selected_green")!
+   UIImage(named: "search_selected")!,
+   UIImage(named: "home_selected")!,
+   UIImage(named: "settings_selected")!
    ])
    segmentControlImage.delegate = self
    segmentControlImage.isSelectorLine = false
    segmentControlImage.isButtomLine = false
-  segmentControlImage.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgroundColor: UIColor(named:UIColor.AppColor.StormDust).colorWithAlphaComponent(0.5))
+  segmentControlImage.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgroundColor: UIColor(named:UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.1))
    return segmentControlImage
    }()
   
@@ -112,6 +112,10 @@ class MainViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    navigationView.backgroundColor = UIColor(named: UIColor.AppColor.PickledBluewood)
+    navigationViewBottom.backgroundColor = UIColor(named: UIColor.AppColor.PickledBluewood)
+    containerView.backgroundColor = UIColor(named: UIColor.AppColor.BisonHide)
     
     navigationView.addSubview(segmentControl)
     navigationViewBottom.addSubview(segmentControlImage)
