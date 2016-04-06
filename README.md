@@ -6,15 +6,24 @@
 [![Platform](https://img.shields.io/cocoapods/p/ASSliderSegmentControl.svg?style=flat)](http://cocoapods.org/pods/ASSliderSegmentControl)
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/kentya6/KYCircularProgress.svg)](http://isitmaintained.com/project/kentya6/KYCircularProgress "Percentage of issues still open")
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/kentya6/KYCircularProgress.svg)](http://isitmaintained.com/project/kentya6/KYCircularProgress "Average time to resolve an issue")
+
+## Features
+- [x] Customizable UI
+- [x] Animation
+- [x] Interaction with page scrolling
+- [x] Following by scroll position
 
 
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Demo
+
+![Alt text](https://github.com/svetlanama/ASSliderSegmentControl/blob/master/demo/animation12.gif "Demo")
+
 ## Requirements
+- Swift, - Swift2
 
 ## Installation
 
@@ -27,8 +36,8 @@ pod "ASSliderSegmentControl"
 
 ## Author
 
-Svitlana Moiseyenko, alexandrovna.sveta@gmail.com
-Alexander Vasileyko, vasileyko.alex@gmail.com
+https://github.com/alexnodejs
+https://github.com/svetlanama
 
 ## License
 
