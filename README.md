@@ -71,16 +71,16 @@ lazy var segmentControlImage: ASSliderSegmentControl = {
    width:
    self.view.bounds.width,
    height: self.navigationView.bounds.height),
-   imageItems: [
-   UIImage(named: "search")!,
-   UIImage(named: "home")!,
-   UIImage(named: "settings")!
-   ],
-   imageItemsHighlighted: [
-   UIImage(named: "search_selected")!,
-   UIImage(named: "home_selected")!,
-   UIImage(named: "settings_selected")!
-   ])
+        imageItems: [
+             UIImage(named: "search")!,
+             UIImage(named: "home")!,
+             UIImage(named: "settings")!
+            ],
+        imageItemsHighlighted: [
+             UIImage(named: "search_selected")!,
+             UIImage(named: "home_selected")!,
+             UIImage(named: "settings_selected")!
+            ])
    return segmentControlImage
    }()
 
@@ -89,13 +89,13 @@ lazy var segmentControlImage: ASSliderSegmentControl = {
 #### Create Customize UI
 ```swift
 // remove buttom line 
- segmentControl.isButtomLine = false
+segmentControl.isButtomLine = false
 
 // remove selected line 
- segmentControl.isSelectorLine = false 
+segmentControl.isSelectorLine = false 
  
 //Customize control appearance
-      segmentControl.changeControlStyle (
+segmentControl.changeControlStyle (
           UIColor.clearColor(),
           selectedBackgroundColor: UIColor.clearColor(),
           textColor: UIColor(named: UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.3),
@@ -108,10 +108,8 @@ lazy var segmentControlImage: ASSliderSegmentControl = {
           selectorHeight: 3
       )
       
-// Or just some parts like background color, text, font, titleEdges, imageEdges
- segmentControlImage.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgroundColor: UIColor(named:UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.1))
- 
-  
+// Or just some parts like background color, text color, font, titleEdges, imageEdges
+segmentControlImage.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgroundColor: UIColor(named:UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.1))
 ```
 
 
