@@ -144,6 +144,7 @@ https://github.com/alexnodejs
 
 https://github.com/svetlanama
 
+
 ## License
 
 ASSliderSegmentControl is available under the MIT license. See the LICENSE file for more info.
