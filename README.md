@@ -18,7 +18,7 @@
 
 ## Demo
 
-![Alt text](https://github.com/svetlanama/ASSliderSegmentControl/blob/master/demo/animation12.gif "Demo")
+![Alt text](https://github.com/svetlanama/ASSliderSegmentControl/blob/master/demo/animation.gif "Demo")
 
 ## Requirements
 - Swift
@@ -58,7 +58,7 @@ lazy var segmentControl: ASSliderSegmentControl = {
   }()
 ```  
 
-![Alt text](https://github.com/svetlanama/ASSliderSegmentControl/blob/master/demo/image_segment_control.png "Demo")
+![Alt text](https://github.com/svetlanama/ASSliderSegmentControl/blob/master/demo/image_segment_control_white.png "Demo")
 ```swift
 // create ASSliderSegmentControl with images
 lazy var segmentControlImage: ASSliderSegmentControl = {
