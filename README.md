@@ -60,8 +60,10 @@ lazy var segmentControl: ASSliderSegmentControl = {
     segmentControl.delegate = self
     return segmentControl
   }()
+```  
 
-
+![Alt text](https://github.com/svetlanama/ASSliderSegmentControl/blob/master/demo/title_segment_control.png "Demo")
+```swift
 // create ASSliderSegmentControl with images
 lazy var segmentControlImage: ASSliderSegmentControl = {
    
