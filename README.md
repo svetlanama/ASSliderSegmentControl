@@ -62,7 +62,7 @@ lazy var segmentControl: ASSliderSegmentControl = {
 ```swift
 // create ASSliderSegmentControl with images
 lazy var segmentControlImage: ASSliderSegmentControl = {
-   let segmentControlImage = ASSliderSegmentControl(frame:
+   let segmentControl = ASSliderSegmentControl(frame:
    CGRect(
    x: 0,
    y: 0,
@@ -79,7 +79,7 @@ lazy var segmentControlImage: ASSliderSegmentControl = {
              UIImage(named: "home_selected")!,
              UIImage(named: "settings_selected")!
             ])
-   return segmentControlImage
+   return segmentControl
    }()
 
 ```
@@ -111,7 +111,7 @@ segmentControl.changeControlStyle (
       )
       
 // Or just change some parts like background color, text color, font, titleEdges, imageEdges
-segmentControlImage.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgroundColor: UIColor(named:UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.1))
+segmentControl.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgroundColor: UIColor(named:UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.1))
 ```
 
 #### Customize UI
@@ -133,7 +133,6 @@ func moveSegmentSelector(scrollView: UIScrollView) {
     }
     
     segmentControl.moveSelectorByScrollPosition(scrollX, index: currentViewIndex.rawValue, scrollDirection: scrollDirection)
-    segmentControlImage.moveSelectorByScrollPosition(scrollX, index: currentViewIndex.rawValue, scrollDirection: scrollDirection)
     }
   }
 ```
