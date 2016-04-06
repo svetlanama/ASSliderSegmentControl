@@ -38,6 +38,7 @@ pod "ASSliderSegmentControl"
 ## Author
 
 https://github.com/alexnodejs
+
 https://github.com/svetlanama
 
 ## License
