@@ -36,9 +36,10 @@ pod "ASSliderSegmentControl"
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-#### Create KYCircularProgress
+#### Create ASSliderSegmentControl
 ```swift
 // create ASSliderSegmentControl with titles
+![Alt text](https://github.com/svetlanama/ASSliderSegmentControl/blob/master/demo/title_segment_control.png "Demo")
 lazy var segmentControl: ASSliderSegmentControl = {
     
     let segmentControl = ASSliderSegmentControl(frame:
