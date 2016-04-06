@@ -42,7 +42,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ```swift
 // create ASSliderSegmentControl with titles
 lazy var segmentControl: ASSliderSegmentControl = {
-    
     let segmentControl = ASSliderSegmentControl(frame:
       CGRect(
         x: 0,
@@ -63,7 +62,6 @@ lazy var segmentControl: ASSliderSegmentControl = {
 ```swift
 // create ASSliderSegmentControl with images
 lazy var segmentControlImage: ASSliderSegmentControl = {
-   
    let segmentControlImage = ASSliderSegmentControl(frame:
    CGRect(
    x: 0,
@@ -86,7 +84,11 @@ lazy var segmentControlImage: ASSliderSegmentControl = {
 
 ```
 
-#### Customize UI
+#### Add control to UI
+```swift
+navigationView.addSubview(segmentControl)
+```
+#### Customize control appearance
 ```swift
 // remove buttom line 
 segmentControl.isButtomLine = false
@@ -112,6 +114,29 @@ segmentControl.changeControlStyle (
 segmentControlImage.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgroundColor: UIColor(named:UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.1))
 ```
 
+#### Customize UI
+```swift
+// To react control's selector on page scrolling 
+func moveSegmentSelector(scrollView: UIScrollView) {
+    let translation = scrollView.panGestureRecognizer.translationInView(self.view)
+    var scrollDirection: HorizontalScrollDirection
+    if translation.x > 0 {
+      scrollDirection = HorizontalScrollDirection.Back
+    } else {
+      scrollDirection = HorizontalScrollDirection.Forward
+    }
+    
+    if scrollView.contentOffset.x != sWidth {
+      var scrollX = scrollView.contentOffset.x - sWidth
+      if scrollDirection == HorizontalScrollDirection.Back {
+        scrollX = scrollView.contentOffset.x
+    }
+    
+    segmentControl.moveSelectorByScrollPosition(scrollX, index: currentViewIndex.rawValue, scrollDirection: scrollDirection)
+    segmentControlImage.moveSelectorByScrollPosition(scrollX, index: currentViewIndex.rawValue, scrollDirection: scrollDirection)
+    }
+  }
+```
 
 ## Author
 
