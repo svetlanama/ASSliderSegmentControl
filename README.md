@@ -86,7 +86,7 @@ lazy var segmentControlImage: ASSliderSegmentControl = {
 
 ```
 
-#### Create Customize UI
+#### Customize UI
 ```swift
 // remove buttom line 
 segmentControl.isButtomLine = false
