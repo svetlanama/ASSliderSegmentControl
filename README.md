@@ -23,7 +23,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ![Alt text](https://github.com/svetlanama/ASSliderSegmentControl/blob/master/demo/animation12.gif "Demo")
 
 ## Requirements
-- Swift, - Swift2
+- Swift
+- Swift2
 
 ## Installation
 
