@@ -9,7 +9,7 @@
 
 ## Features
 - [x] Customizable UI
-- [x] Animation
+- [x] Selector line animation
 - [x] Interaction with page scrolling
 - [x] Following by scroll position
 
