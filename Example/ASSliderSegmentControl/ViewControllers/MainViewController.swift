@@ -25,6 +25,10 @@ class MainViewController: UIViewController {
   private var sWidth: CGFloat = 0.0
   private var isPageScrolling: Bool = false
   
+  override func preferredStatusBarStyle() -> UIStatusBarStyle {
+    return UIStatusBarStyle.LightContent
+  }
+  
   //MARK: Example of Text Segment control
   lazy var segmentControl: ASSliderSegmentControl = {
     
@@ -115,7 +119,7 @@ class MainViewController: UIViewController {
     
     navigationView.backgroundColor = UIColor(named: UIColor.AppColor.PickledBluewood)
     navigationViewBottom.backgroundColor = UIColor(named: UIColor.AppColor.PickledBluewood)
-    containerView.backgroundColor = UIColor(named: UIColor.AppColor.BisonHide)
+    containerView.backgroundColor = UIColor(named: UIColor.AppColor.BermudaGray)
     
     navigationView.addSubview(segmentControl)
     navigationViewBottom.addSubview(segmentControlImage)

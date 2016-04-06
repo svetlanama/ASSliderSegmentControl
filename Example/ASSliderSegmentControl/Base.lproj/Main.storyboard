@@ -28,15 +28,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2i-Hw-149">
-                                <rect key="frame" x="1" y="0.0" width="373" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whale.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sxc-NP-ATW">
+                                        <rect key="frame" x="8" y="8" width="359" height="573"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Sxc-NP-ATW" firstAttribute="top" secondItem="V2i-Hw-149" secondAttribute="top" constant="8" id="UHg-99-vGJ"/>
+                                    <constraint firstItem="Sxc-NP-ATW" firstAttribute="leading" secondItem="V2i-Hw-149" secondAttribute="leading" constant="8" id="ab4-DY-oh8"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sxc-NP-ATW" secondAttribute="trailing" constant="8" id="pZ8-vJ-MPx"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sxc-NP-ATW" secondAttribute="bottom" constant="86" id="pnE-RN-JuY"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.67450982329999998" green="0.79215693470000004" blue="0.9215686917" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="V2i-Hw-149" firstAttribute="leading" secondItem="7Eo-Z4-ehk" secondAttribute="leading" constant="1" id="6tu-n5-xJc"/>
+                            <constraint firstItem="V2i-Hw-149" firstAttribute="leading" secondItem="7Eo-Z4-ehk" secondAttribute="leading" id="6tu-n5-xJc"/>
                             <constraint firstItem="fRU-d0-XPE" firstAttribute="top" secondItem="V2i-Hw-149" secondAttribute="bottom" id="YJN-a4-xtx"/>
-                            <constraint firstAttribute="trailing" secondItem="V2i-Hw-149" secondAttribute="trailing" constant="1" id="vGG-Xk-xKz"/>
+                            <constraint firstAttribute="trailing" secondItem="V2i-Hw-149" secondAttribute="trailing" id="vGG-Xk-xKz"/>
                             <constraint firstItem="V2i-Hw-149" firstAttribute="top" secondItem="7Eo-Z4-ehk" secondAttribute="top" id="zFJ-Ju-h9Y"/>
                         </constraints>
                     </view>
@@ -62,15 +73,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sdd-TV-jes">
-                                <rect key="frame" x="1" y="0.0" width="373" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ship.png" translatesAutoresizingMaskIntoConstraints="NO" id="YM2-cO-4Zs">
+                                        <rect key="frame" x="8" y="8" width="359" height="573"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="YM2-cO-4Zs" secondAttribute="bottom" constant="86" id="KJ1-YB-L4J"/>
+                                    <constraint firstItem="YM2-cO-4Zs" firstAttribute="top" secondItem="Sdd-TV-jes" secondAttribute="top" constant="8" id="PKl-FX-aLt"/>
+                                    <constraint firstItem="YM2-cO-4Zs" firstAttribute="leading" secondItem="Sdd-TV-jes" secondAttribute="leading" constant="8" id="ovj-Ob-ifh"/>
+                                    <constraint firstAttribute="trailing" secondItem="YM2-cO-4Zs" secondAttribute="trailing" constant="8" id="xqg-Uo-5N3"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ngb-fJ-R2w" firstAttribute="top" secondItem="Sdd-TV-jes" secondAttribute="bottom" id="64n-gC-wNs"/>
-                            <constraint firstAttribute="trailing" secondItem="Sdd-TV-jes" secondAttribute="trailing" constant="1" id="Foj-iU-P5F"/>
-                            <constraint firstItem="Sdd-TV-jes" firstAttribute="leading" secondItem="18D-uB-rx4" secondAttribute="leading" constant="1" id="WFJ-RP-Ue4"/>
+                            <constraint firstAttribute="trailing" secondItem="Sdd-TV-jes" secondAttribute="trailing" id="Foj-iU-P5F"/>
+                            <constraint firstItem="Sdd-TV-jes" firstAttribute="leading" secondItem="18D-uB-rx4" secondAttribute="leading" id="WFJ-RP-Ue4"/>
                             <constraint firstItem="Sdd-TV-jes" firstAttribute="top" secondItem="18D-uB-rx4" secondAttribute="top" id="bfL-rc-JH5"/>
                         </constraints>
                     </view>
@@ -154,16 +176,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnv-8I-Qiy">
-                                <rect key="frame" x="1" y="0.0" width="373" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iceberg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WWK-6g-YgG">
+                                        <rect key="frame" x="8" y="8" width="359" height="573"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="WWK-6g-YgG" firstAttribute="leading" secondItem="lnv-8I-Qiy" secondAttribute="leading" constant="8" id="2Yz-65-ysN"/>
+                                    <constraint firstAttribute="trailing" secondItem="WWK-6g-YgG" secondAttribute="trailing" constant="8" id="B0t-4j-yup"/>
+                                    <constraint firstItem="WWK-6g-YgG" firstAttribute="top" secondItem="lnv-8I-Qiy" secondAttribute="top" constant="8" id="QZx-li-dyx"/>
+                                    <constraint firstAttribute="bottom" secondItem="WWK-6g-YgG" secondAttribute="bottom" constant="86" id="z7s-KG-8oy"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.74117648599999997" green="0.90196084980000002" blue="0.44705885649999999" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="lnv-8I-Qiy" firstAttribute="leading" secondItem="pqj-oz-QvF" secondAttribute="leading" constant="1" id="Tue-XR-BhZ"/>
+                            <constraint firstItem="lnv-8I-Qiy" firstAttribute="leading" secondItem="pqj-oz-QvF" secondAttribute="leading" id="Tue-XR-BhZ"/>
                             <constraint firstItem="HDs-Dt-kHt" firstAttribute="top" secondItem="lnv-8I-Qiy" secondAttribute="bottom" id="fgI-df-NZu"/>
                             <constraint firstItem="lnv-8I-Qiy" firstAttribute="top" secondItem="pqj-oz-QvF" secondAttribute="top" id="u0A-5b-xeS"/>
-                            <constraint firstAttribute="trailing" secondItem="lnv-8I-Qiy" secondAttribute="trailing" constant="1" id="yne-Cl-3Lz"/>
+                            <constraint firstAttribute="trailing" secondItem="lnv-8I-Qiy" secondAttribute="trailing" id="yne-Cl-3Lz"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -176,4 +209,9 @@
             <point key="canvasLocation" x="787.5" y="1116.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iceberg.jpg" width="200" height="300"/>
+        <image name="ship.png" width="300" height="337"/>
+        <image name="whale.jpg" width="229" height="225"/>
+    </resources>
 </document>

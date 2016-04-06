@@ -20,6 +20,9 @@
 		EA3F41BC1CAC665F00D3D035 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3F41B71CAC665F00D3D035 /* SecondViewController.swift */; };
 		EA3F41BD1CAC665F00D3D035 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3F41B81CAC665F00D3D035 /* ThirdViewController.swift */; };
 		EA3F41BF1CAC666900D3D035 /* UIColor+PC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3F41BE1CAC666900D3D035 /* UIColor+PC.swift */; };
+		EAEF2A911CB5C6B50049C03A /* whale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAEF2A901CB5C6B50049C03A /* whale.jpg */; };
+		EAEF2A931CB5C7C90049C03A /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF2A921CB5C7C90049C03A /* ship.png */; };
+		EAEF2A951CB5C8330049C03A /* iceberg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAEF2A941CB5C8330049C03A /* iceberg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		EA3F41B71CAC665F00D3D035 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ViewControllers/SecondViewController.swift; sourceTree = "<group>"; };
 		EA3F41B81CAC665F00D3D035 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ViewControllers/ThirdViewController.swift; sourceTree = "<group>"; };
 		EA3F41BE1CAC666900D3D035 /* UIColor+PC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+PC.swift"; path = "Utils/UIColor+PC.swift"; sourceTree = "<group>"; };
+		EAEF2A901CB5C6B50049C03A /* whale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = whale.jpg; path = Images/whale.jpg; sourceTree = "<group>"; };
+		EAEF2A921CB5C7C90049C03A /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship.png; path = Images/ship.png; sourceTree = "<group>"; };
+		EAEF2A941CB5C8330049C03A /* iceberg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = iceberg.jpg; path = Images/iceberg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		607FACD21AFB9204008FA782 /* Example for ASSliderSegmentControl */ = {
 			isa = PBXGroup;
 			children = (
+				EAEF2A8F1CB5C6880049C03A /* images */,
 				EA3F41B31CAC662300D3D035 /* Utils */,
 				EA3F41B21CAC661400D3D035 /* ViewControllers */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -190,6 +197,16 @@
 				EA3F41BE1CAC666900D3D035 /* UIColor+PC.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		EAEF2A8F1CB5C6880049C03A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EAEF2A901CB5C6B50049C03A /* whale.jpg */,
+				EAEF2A921CB5C7C90049C03A /* ship.png */,
+				EAEF2A941CB5C8330049C03A /* iceberg.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,8 +297,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				EAEF2A931CB5C7C90049C03A /* ship.png in Resources */,
+				EAEF2A911CB5C6B50049C03A /* whale.jpg in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				EAEF2A951CB5C8330049C03A /* iceberg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
