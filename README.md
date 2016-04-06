@@ -56,8 +56,6 @@ lazy var segmentControl: ASSliderSegmentControl = {
                                                   "Home",
                                                   "Settings"
       ])
-    
-    segmentControl.delegate = self
     return segmentControl
   }()
 ```  
@@ -84,14 +82,39 @@ lazy var segmentControlImage: ASSliderSegmentControl = {
    UIImage(named: "home_selected")!,
    UIImage(named: "settings_selected")!
    ])
-   segmentControlImage.delegate = self
-   segmentControlImage.isSelectorLine = false
-   segmentControlImage.isButtomLine = false
-  segmentControlImage.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgroundColor: UIColor(named:UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.1))
    return segmentControlImage
    }()
 
 ```
+
+#### Create Customize UI
+```swift
+// remove buttom line 
+ segmentControl.isButtomLine = false
+
+// remove selected line 
+ segmentControl.isSelectorLine = false 
+ 
+//Customize control appearance
+      segmentControl.changeControlStyle (
+          UIColor.clearColor(),
+          selectedBackgroundColor: UIColor.clearColor(),
+          textColor: UIColor(named: UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.3),
+          font: UIFont(name: "Helvetica", size: 17)!,
+          selectedTextColor: UIColor(named: UIColor.AppColor.BisonHide),
+          selectedFont:UIFont(name: "Helvetica", size: 17)!,
+          bottomLineColor: UIColor(named: UIColor.AppColor.LinkWater),
+          selectorColor: UIColor(named: UIColor.AppColor.BisonHide),
+          bottomLineHeight: 0.5,
+          selectorHeight: 3
+      )
+      
+// Or just some parts like background color, text, font, titleEdges, imageEdges
+ segmentControlImage.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgroundColor: UIColor(named:UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.1))
+ 
+  
+```
+
 
 ## Author
 
