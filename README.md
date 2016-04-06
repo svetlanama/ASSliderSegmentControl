@@ -41,7 +41,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ![Alt text](https://github.com/svetlanama/ASSliderSegmentControl/blob/master/demo/title_segment_control.png "Demo")
 ```swift
 // create ASSliderSegmentControl with titles
-
 lazy var segmentControl: ASSliderSegmentControl = {
     
     let segmentControl = ASSliderSegmentControl(frame:
