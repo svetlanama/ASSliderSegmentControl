@@ -110,7 +110,7 @@ segmentControl.changeControlStyle (
           selectorHeight: 3
       )
       
-// Or just some parts like background color, text color, font, titleEdges, imageEdges
+// Or just change some parts like background color, text color, font, titleEdges, imageEdges
 segmentControlImage.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgroundColor: UIColor(named:UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.1))
 ```
 
