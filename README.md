@@ -36,6 +36,57 @@ pod "ASSliderSegmentControl"
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+#### Create KYCircularProgress
+```swift
+// create ASSliderSegmentControl with titles
+lazy var segmentControl: ASSliderSegmentControl = {
+    
+    let segmentControl = ASSliderSegmentControl(frame:
+      CGRect(
+        x: 0,
+        y: 0,
+        width:
+        self.view.bounds.width,
+        height: self.navigationView.bounds.height),
+                                                titleItems: [
+                                                  "Discover",
+                                                  "Home",
+                                                  "Settings"
+      ])
+    
+    segmentControl.delegate = self
+    return segmentControl
+  }()
+
+
+// create ASSliderSegmentControl with images
+lazy var segmentControlImage: ASSliderSegmentControl = {
+   
+   let segmentControlImage = ASSliderSegmentControl(frame:
+   CGRect(
+   x: 0,
+   y: 0,
+   width:
+   self.view.bounds.width,
+   height: self.navigationView.bounds.height),
+   imageItems: [
+   UIImage(named: "search")!,
+   UIImage(named: "home")!,
+   UIImage(named: "settings")!
+   ],
+   imageItemsHighlighted: [
+   UIImage(named: "search_selected")!,
+   UIImage(named: "home_selected")!,
+   UIImage(named: "settings_selected")!
+   ])
+   segmentControlImage.delegate = self
+   segmentControlImage.isSelectorLine = false
+   segmentControlImage.isButtomLine = false
+  segmentControlImage.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgroundColor: UIColor(named:UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.1))
+   return segmentControlImage
+   }()
+
+```
 
 ## Author
 
