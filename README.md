@@ -137,6 +137,14 @@ func moveSegmentSelector(scrollView: UIScrollView) {
   }
 ```
 
+#### Update Contraints
+```swift
+ override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    segmentControl.updateControlConstraints()
+  }
+```
 ## Author
 
 https://github.com/alexnodejs
@@ -145,6 +153,9 @@ https://github.com/svetlanama
 
 ## Related Links
 https://github.com/svetlanama/ASPageControllerSample
+
+## Referring Links
+https://github.com/yemeksepeti/YSSegmentedControl
 
 ## License
 
