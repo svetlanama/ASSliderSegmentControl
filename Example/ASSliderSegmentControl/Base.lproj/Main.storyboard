@@ -30,7 +30,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2i-Hw-149">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whale.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sxc-NP-ATW">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bumblebee.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sxc-NP-ATW">
                                         <rect key="frame" x="8" y="8" width="359" height="573"/>
                                     </imageView>
                                 </subviews>
@@ -75,7 +75,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sdd-TV-jes">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ship.png" translatesAutoresizingMaskIntoConstraints="NO" id="YM2-cO-4Zs">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snail.png" translatesAutoresizingMaskIntoConstraints="NO" id="YM2-cO-4Zs">
                                         <rect key="frame" x="8" y="8" width="359" height="573"/>
                                     </imageView>
                                 </subviews>
@@ -178,7 +178,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnv-8I-Qiy">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iceberg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WWK-6g-YgG">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lizard.png" translatesAutoresizingMaskIntoConstraints="NO" id="WWK-6g-YgG">
                                         <rect key="frame" x="8" y="8" width="359" height="573"/>
                                     </imageView>
                                 </subviews>
@@ -210,8 +210,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="iceberg.jpg" width="200" height="300"/>
-        <image name="ship.png" width="300" height="337"/>
-        <image name="whale.jpg" width="229" height="225"/>
+        <image name="bumblebee.png" width="211" height="326"/>
+        <image name="lizard.png" width="330" height="488"/>
+        <image name="snail.png" width="2323" height="2477"/>
     </resources>
 </document>

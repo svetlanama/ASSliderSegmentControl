@@ -16,7 +16,6 @@ public enum HorizontalScrollDirection: Int {
   
 }
 
-
 struct ASSegmentControlStyle {
   var backgroundColor: UIColor = UIColor.clearColor()
   var selectedBackgroundColor: UIColor = UIColor.clearColor()
@@ -33,7 +32,6 @@ struct ASSegmentControlStyle {
   var textEdgeInsets: UIEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0)
   var textSelectedEdgeInsets: UIEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0)
 }
-
 
 
 protocol SegmentItemDelegate: class {

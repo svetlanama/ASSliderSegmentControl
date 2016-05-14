@@ -22,8 +22,14 @@ class MainViewController: UIViewController {
   @IBOutlet weak var navigationView: UIView!
   @IBOutlet weak var navigationViewBottom: UIView!
   
-  private var sWidth: CGFloat = 0.0
+
   private var isPageScrolling: Bool = false
+  
+  private var scrollView: UIScrollView! {
+    didSet {
+      scrollView.delegate = self
+    }
+  }
   
   override func preferredStatusBarStyle() -> UIStatusBarStyle {
     return UIStatusBarStyle.LightContent
@@ -123,7 +129,7 @@ class MainViewController: UIViewController {
     
     navigationView.addSubview(segmentControl)
     navigationViewBottom.addSubview(segmentControlImage)
-    initScrollDelegate()
+    initScrollView()
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -133,11 +139,12 @@ class MainViewController: UIViewController {
   }
   
    // Set up delegate to track user scroll actions
-  func initScrollDelegate() {
+  func initScrollView() {
     for v in pageViewController!.view.subviews{
       if v.isKindOfClass(UIScrollView){
-        (v as! UIScrollView).delegate = self
-        sWidth = (v as! UIScrollView).frame.size.width
+        scrollView = v as! UIScrollView
+        //(v as! UIScrollView).delegate = self
+        //sWidth = (v as! UIScrollView).frame.size.width
       }
     }
   }
@@ -158,9 +165,9 @@ class MainViewController: UIViewController {
       scrollDirection = HorizontalScrollDirection.Forward
     }
     
-    if scrollView.contentOffset.x != sWidth {
+    if scrollView.contentOffset.x != scrollView.frame.size.width {
       //Move segment control
-      var scrollX = scrollView.contentOffset.x - sWidth
+      var scrollX = scrollView.contentOffset.x - scrollView.frame.size.width
       if scrollDirection == HorizontalScrollDirection.Back {
         scrollX = scrollView.contentOffset.x
       }
