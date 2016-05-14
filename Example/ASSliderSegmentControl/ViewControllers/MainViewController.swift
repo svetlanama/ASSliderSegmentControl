@@ -132,6 +132,13 @@ class MainViewController: UIViewController {
     initScrollView()
   }
   
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    segmentControl.updateControlConstraints()
+    segmentControlImage.updateControlConstraints()
+  }
+  
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if let pageViewController = segue.destinationViewController as? PageViewController {
       self.pageViewController = pageViewController
@@ -143,8 +150,6 @@ class MainViewController: UIViewController {
     for v in pageViewController!.view.subviews{
       if v.isKindOfClass(UIScrollView){
         scrollView = v as! UIScrollView
-        //(v as! UIScrollView).delegate = self
-        //sWidth = (v as! UIScrollView).frame.size.width
       }
     }
   }

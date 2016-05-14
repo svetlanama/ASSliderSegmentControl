@@ -27,8 +27,8 @@ struct ASSegmentControlStyle {
   var selectorColor: UIColor = UIColor.whiteColor()
   var bottomLineHeight: CGFloat = 0.5
   var selectorHeight: CGFloat = 3
-  var imageEdgeInsets: UIEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0)//(0, 5, 10, 5)
-  var imageHighlightedEdgeInsets: UIEdgeInsets =  UIEdgeInsetsMake(0, 0, 0, 0) //(15, 0, 5, 0)
+  var imageEdgeInsets: UIEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+  var imageHighlightedEdgeInsets: UIEdgeInsets =  UIEdgeInsetsMake(0, 0, 0, 0)
   var textEdgeInsets: UIEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0)
   var textSelectedEdgeInsets: UIEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0)
 }
@@ -40,10 +40,12 @@ protocol SegmentItemDelegate: class {
 
 class SegmentItem: UIButton {
   
-  weak var delegate: SegmentItemDelegate? {
-    didSet{
-    }
-  }
+  var widthConstraint: NSLayoutConstraint?
+  var heightConstraint: NSLayoutConstraint?
+  var topConstraint: NSLayoutConstraint?
+  var leadingConstraint: NSLayoutConstraint?
+
+  weak var delegate: SegmentItemDelegate?
   
   var controlStyle: ASSegmentControlStyle! {
     didSet {
@@ -91,6 +93,65 @@ class SegmentItem: UIButton {
   override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
     delegate?.itemClick(self)
   }
+  
+  // MARK: constraints
+  func removeConstraints() {
+    if leadingConstraint != nil {
+      self.removeConstraint(leadingConstraint!)
+    }
+    if topConstraint != nil {
+      self.removeConstraint(topConstraint!)
+    }
+    if heightConstraint != nil {
+      self.removeConstraint(heightConstraint!)
+    }
+    if widthConstraint != nil {
+      self.removeConstraint(widthConstraint!)
+    }
+  }
+  
+  func addConstraints() {
+    heightConstraint = NSLayoutConstraint(
+      item: self,
+      attribute: NSLayoutAttribute.Height,
+      relatedBy: NSLayoutRelation.Equal,
+      toItem: nil,
+      attribute: NSLayoutAttribute.NotAnAttribute,
+      multiplier: 1,
+      constant: self.frame.size.height)
+    
+    widthConstraint = NSLayoutConstraint(
+      item: self,
+      attribute: NSLayoutAttribute.Width,
+      relatedBy: NSLayoutRelation.Equal,
+      toItem: nil,
+      attribute: NSLayoutAttribute.NotAnAttribute,
+      multiplier: 1,
+      constant: self.frame.size.width)
+    
+    topConstraint = NSLayoutConstraint(
+      item: self,                       // to which item we add the constraint
+      attribute: NSLayoutAttribute.Top, // which part of item we connecting
+      relatedBy: NSLayoutRelation.Equal,
+      toItem: self.superview,           // to which object related
+      attribute: NSLayoutAttribute.Top, // the part of related object from which the gap will be
+      multiplier: 1,
+      constant: 0)
+    
+    leadingConstraint = NSLayoutConstraint(
+      item: self,
+      attribute: NSLayoutAttribute.Leading,
+      relatedBy: NSLayoutRelation.Equal,
+      toItem: self.superview,
+      attribute: NSLayoutAttribute.Leading,
+      multiplier: 1,
+      constant: 0)
+    
+    self.translatesAutoresizingMaskIntoConstraints = false
+    NSLayoutConstraint.activateConstraints([leadingConstraint!, topConstraint!, heightConstraint!, widthConstraint!])
+    
+  }
+
 }
 
 private class ASSegmentTitleItem: SegmentItem {
@@ -168,7 +229,7 @@ public protocol ASSliderSegmentControlDelegate: class {
 }
 
 public class ASSliderSegmentControl: UIView {
-  
+
   public weak var delegate: ASSliderSegmentControlDelegate?
   private var items: [SegmentItem] = []
   private var selectedIndex: Int = 0
@@ -186,9 +247,7 @@ public class ASSliderSegmentControl: UIView {
       drawControl()
     }
   }
-  
-  
-  
+
   private var controlStyle: ASSegmentControlStyle! {
     didSet{
       drawControl()
@@ -218,7 +277,7 @@ public class ASSliderSegmentControl: UIView {
     initDefaultControlStyle()
     selectItemAtIndex(selectedIndex)
   }
-  
+
   private func addItem(item: SegmentItem) {
     items.append(item)
   }
@@ -293,17 +352,37 @@ public class ASSliderSegmentControl: UIView {
       v.removeFromSuperview()
     }
   }
-  
+
   private func drawControl() {
     
     cleanControl()
+    cleanConstraints()
     for item in items {
       item.controlStyle = controlStyle
       addSubview(item)
+      item.addConstraints()
     }
     
     addButtomLine()
     addSelectorLine()
+  }
+  
+  // MARK: contraints
+  private func cleanConstraints() {
+    for item in items {
+      item.removeConstraints()
+    }
+  }
+
+  public func updateControlConstraints() {
+    let width = frame.size.width / CGFloat(items.count)
+    let height = frame.size.height
+    for item in items {
+      item.widthConstraint?.constant = width
+      item.heightConstraint?.constant = height
+      item.leadingConstraint?.constant = CGFloat(item.index) * width
+      item.topConstraint?.constant = frame.origin.y //TODO: - marginTop
+    }
   }
   
   //MARK: Appearance control

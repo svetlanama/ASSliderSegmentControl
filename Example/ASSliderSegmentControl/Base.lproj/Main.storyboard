@@ -81,19 +81,19 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="YM2-cO-4Zs" secondAttribute="bottom" constant="86" id="KJ1-YB-L4J"/>
-                                    <constraint firstItem="YM2-cO-4Zs" firstAttribute="top" secondItem="Sdd-TV-jes" secondAttribute="top" constant="8" id="PKl-FX-aLt"/>
-                                    <constraint firstItem="YM2-cO-4Zs" firstAttribute="leading" secondItem="Sdd-TV-jes" secondAttribute="leading" constant="8" id="ovj-Ob-ifh"/>
-                                    <constraint firstAttribute="trailing" secondItem="YM2-cO-4Zs" secondAttribute="trailing" constant="8" id="xqg-Uo-5N3"/>
+                                    <constraint firstItem="YM2-cO-4Zs" firstAttribute="leading" secondItem="Sdd-TV-jes" secondAttribute="leading" constant="8" id="fd4-H0-bUZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="YM2-cO-4Zs" secondAttribute="bottom" constant="86" id="hBh-dJ-tvx"/>
+                                    <constraint firstItem="YM2-cO-4Zs" firstAttribute="top" secondItem="Sdd-TV-jes" secondAttribute="top" constant="8" id="s2n-K6-Zno"/>
+                                    <constraint firstAttribute="trailing" secondItem="YM2-cO-4Zs" secondAttribute="trailing" constant="8" id="sy7-U8-UE6"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ngb-fJ-R2w" firstAttribute="top" secondItem="Sdd-TV-jes" secondAttribute="bottom" id="64n-gC-wNs"/>
-                            <constraint firstAttribute="trailing" secondItem="Sdd-TV-jes" secondAttribute="trailing" id="Foj-iU-P5F"/>
-                            <constraint firstItem="Sdd-TV-jes" firstAttribute="leading" secondItem="18D-uB-rx4" secondAttribute="leading" id="WFJ-RP-Ue4"/>
-                            <constraint firstItem="Sdd-TV-jes" firstAttribute="top" secondItem="18D-uB-rx4" secondAttribute="top" id="bfL-rc-JH5"/>
+                            <constraint firstItem="Sdd-TV-jes" firstAttribute="leading" secondItem="18D-uB-rx4" secondAttribute="leading" id="9Wu-Ud-ARn"/>
+                            <constraint firstItem="ngb-fJ-R2w" firstAttribute="top" secondItem="Sdd-TV-jes" secondAttribute="bottom" id="RWo-PI-ivw"/>
+                            <constraint firstItem="Sdd-TV-jes" firstAttribute="top" secondItem="18D-uB-rx4" secondAttribute="top" id="YNc-gK-QYO"/>
+                            <constraint firstAttribute="trailing" secondItem="Sdd-TV-jes" secondAttribute="trailing" id="bKn-Qb-CdS"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
