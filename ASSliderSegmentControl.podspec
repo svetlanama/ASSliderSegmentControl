@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ASSliderSegmentControl"
-  s.version          = "0.5.2"
+  s.version          = "0.5.3"
   s.summary          = "Custom slider segment control."
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Svitlana Moiseyenko" => "alexandrovna.sveta@gmail.com", "Alexander Vasileyko" => "vasileyko.alex@gmail.com" }
   s.source           = { :git => "https://github.com/svetlanama/ASSliderSegmentControl.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/svetlana_ma'
+  # s.social_media_url = 'https://twitter.com/s_moiseyenko'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
