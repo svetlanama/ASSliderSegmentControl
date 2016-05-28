@@ -9,6 +9,12 @@
 import Foundation
 import UIKit
 
+protocol PageViewControllerDelegate: class {
+  func pageViewController(pageViewController: PageViewController, didUpdatePageCount count: Int)
+  func pageViewController(pageViewController: PageViewController, didUpdatePageIndex index: Int)
+  func pageViewController(pageViewController: PageViewController, didUpdateScroll scrollView: UIScrollView)
+}
+
 class PageViewController: UIPageViewController {
   
   weak var pageViewControllerDelegate: PageViewControllerDelegate?
@@ -20,11 +26,25 @@ class PageViewController: UIPageViewController {
       self.loadItemViewController("third_vc")]
   }()
   
+  internal lazy var scrollView: UIScrollView? = {
+    var scrollView: UIScrollView?
+    
+    for subview in self.view.subviews {
+      if subview.isKindOfClass(UIScrollView) {
+        scrollView = subview as? UIScrollView
+        break
+      }
+    }
+    
+    return scrollView
+  }()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     dataSource = self
     delegate = self
+    scrollView?.delegate = self
     
     if let initialViewController = itemViewControllers.first {
       scrollToViewController(initialViewController)
@@ -117,7 +137,6 @@ extension  PageViewController: UIPageViewControllerDataSource {
 
 }
 
-
 extension PageViewController: UIPageViewControllerDelegate {
   
   func pageViewController(pageViewController: UIPageViewController,
@@ -128,15 +147,13 @@ extension PageViewController: UIPageViewControllerDelegate {
   }
 }
 
-
-protocol PageViewControllerDelegate: class {
-  
-  func pageViewController(pageViewController: PageViewController,
-    didUpdatePageCount count: Int)
-
-  func pageViewController(pageViewController: PageViewController,
-    didUpdatePageIndex index: Int)
+extension PageViewController: UIScrollViewDelegate {
+  func scrollViewDidScroll(scrollView: UIScrollView) {
+    pageViewControllerDelegate?.pageViewController(self, didUpdateScroll: scrollView)
+  }
 }
+
+
 
 
 

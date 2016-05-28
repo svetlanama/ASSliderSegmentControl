@@ -21,16 +21,7 @@ class MainViewController: UIViewController {
   @IBOutlet weak var containerView: UIView!
   @IBOutlet weak var navigationView: UIView!
   @IBOutlet weak var navigationViewBottom: UIView!
-  
 
-  private var isPageScrolling: Bool = false
-  
-  private var scrollView: UIScrollView! {
-    didSet {
-      scrollView.delegate = self
-    }
-  }
-  
   override func preferredStatusBarStyle() -> UIStatusBarStyle {
     return UIStatusBarStyle.LightContent
   }
@@ -39,12 +30,7 @@ class MainViewController: UIViewController {
   lazy var segmentControl: ASSliderSegmentControl = {
     
     let segmentControl = ASSliderSegmentControl(frame:
-      CGRect(
-        x: 0,
-        y: 0,
-        width:
-        self.view.bounds.width,
-        height: self.navigationView.bounds.height),
+      CGRect( x: 0, y: 0, width: self.view.bounds.width, height: self.navigationView.bounds.height),
                                                 titleItems: [
                                                   "Discover",
                                                   "Home",
@@ -52,51 +38,47 @@ class MainViewController: UIViewController {
       ])
     
     segmentControl.delegate = self
-    segmentControl.isButtomLine = false
+    segmentControl.displayBottomLine = false
     
-     //Customize control appearance
-      segmentControl.changeControlStyle (
-          UIColor.clearColor(),
-          selectedBackgroundColor: UIColor.clearColor(),
-          textColor: UIColor(named: UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.3),
-          font: UIFont(name: "Helvetica", size: 17)!,
-          selectedTextColor: UIColor(named: UIColor.AppColor.BisonHide),
-          selectedFont:UIFont(name: "Helvetica", size: 17)!,
-          bottomLineColor: UIColor(named: UIColor.AppColor.LinkWater),
-          selectorColor: UIColor(named: UIColor.AppColor.BisonHide),
-          bottomLineHeight: 0.5,
-          selectorHeight: 3
-      )
+    //Customize control appearance
+    segmentControl.setAppearance (
+      UIColor.clearColor(),
+      selectedBackgroundColor: UIColor.clearColor(),
+      textColor: UIColor(named: UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.3),
+      font: UIFont(name: "Helvetica", size: 17)!,
+      selectedTextColor: UIColor(named: UIColor.AppColor.BisonHide),
+      selectedFont:UIFont(name: "Helvetica", size: 17)!,
+      bottomLineColor: UIColor(named: UIColor.AppColor.LinkWater),
+      selectorColor: UIColor(named: UIColor.AppColor.BisonHide),
+      bottomLineHeight: 0.5,
+      selectorHeight: 3
+    )
     
     return segmentControl
   }()
   
   //MARK: Example of Image Segment Control
- lazy var segmentControlImage: ASSliderSegmentControl = {
-   
-   let segmentControlImage = ASSliderSegmentControl(frame:
-   CGRect(
-   x: 0,
-   y: 0,
-   width:
-   self.view.bounds.width,
-   height: self.navigationView.bounds.height),
-   imageItems: [
-   UIImage(named: "search")!,
-   UIImage(named: "home")!,
-   UIImage(named: "settings")!
-   ],
-   imageItemsHighlighted: [
-   UIImage(named: "search_selected")!,
-   UIImage(named: "home_selected")!,
-   UIImage(named: "settings_selected")!
-   ])
-   segmentControlImage.delegate = self
-   segmentControlImage.isSelectorLine = false
-   segmentControlImage.isButtomLine = false
-  segmentControlImage.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgroundColor: UIColor(named:UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.1))
-   return segmentControlImage
-   }()
+  lazy var segmentControlImage: ASSliderSegmentControl = {
+    
+    let segmentControlImage = ASSliderSegmentControl(frame:
+      CGRect( x: 0, y: 0, width: self.view.bounds.width, height: self.navigationView.bounds.height),
+                                                     imageItems: [
+                                                      UIImage(named: "search")!,
+                                                      UIImage(named: "home")!,
+                                                      UIImage(named: "settings")!
+      ],
+                                                     imageItemsHighlighted: [
+                                                      UIImage(named: "search_selected")!,
+                                                      UIImage(named: "home_selected")!,
+                                                      UIImage(named: "settings_selected")!
+      ])
+    segmentControlImage.delegate = self
+    segmentControlImage.isSelectorLine = false
+    segmentControlImage.displayBottomLine = false
+    
+    segmentControlImage.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgroundColor: UIColor(named:UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.1))
+    return segmentControlImage
+  }()
   
   
   @IBAction func onFirst(sender: AnyObject) {
@@ -129,7 +111,6 @@ class MainViewController: UIViewController {
     
     navigationView.addSubview(segmentControl)
     navigationViewBottom.addSubview(segmentControlImage)
-    initScrollView()
   }
   
   override func viewDidLayoutSubviews() {
@@ -142,15 +123,6 @@ class MainViewController: UIViewController {
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if let pageViewController = segue.destinationViewController as? PageViewController {
       self.pageViewController = pageViewController
-    }
-  }
-  
-   // Set up delegate to track user scroll actions
-  func initScrollView() {
-    for v in pageViewController!.view.subviews{
-      if v.isKindOfClass(UIScrollView){
-        scrollView = v as! UIScrollView
-      }
     }
   }
   
@@ -187,23 +159,6 @@ extension MainViewController: ASSliderSegmentControlDelegate {
   }
   
 }
-extension MainViewController: UIScrollViewDelegate {
-  func scrollViewDidScroll(scrollView: UIScrollView) {
-    
-    if !isPageScrolling {
-      return
-    }
-    moveSegmentSelector(scrollView)
-  }
-  
-  func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-    isPageScrolling = false
-  }
-  
-  func scrollViewWillBeginDragging(scrollView: UIScrollView) {
-    isPageScrolling = true
-  }
-}
 
 extension MainViewController: PageViewControllerDelegate {
   
@@ -218,6 +173,9 @@ extension MainViewController: PageViewControllerDelegate {
     segmentControlImage.selectItemAtIndex(currentViewIndex.rawValue)
   }
   
+  func pageViewController(pageViewController: PageViewController, didUpdateScroll scrollView: UIScrollView) {
+    segmentControl.moveSelectorLine(scrollView, targetView: view)
+  }
 }
 
 
