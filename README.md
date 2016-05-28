@@ -80,8 +80,8 @@ navigationView.addSubview(segmentControl)
 ```
 #### Customize control appearance
 ```swift
-// remove buttom line 
-segmentControl.displayBottomLine = false
+// remove separator line 
+segmentControl.displaySeparator = false
 
 // remove selected line 
 segmentControl.isSelectorLine = false 
@@ -113,14 +113,6 @@ segmentControl.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgr
 
 ```
 
-#### Update Contraints
-```swift
- override func viewDidLayoutSubviews() {
-    super.viewDidLayoutSubviews()
-    
-    segmentControl.updateControlConstraints()
-  }
-```
 ## Author
 
 https://github.com/alexnodejs

@@ -38,7 +38,7 @@ class MainViewController: UIViewController {
       ])
     
     segmentControl.delegate = self
-    segmentControl.displayBottomLine = false
+    segmentControl.displaySeparator = false
     
     //Customize control appearance
     segmentControl.setAppearance (
@@ -74,7 +74,7 @@ class MainViewController: UIViewController {
       ])
     segmentControlImage.delegate = self
     segmentControlImage.isSelectorLine = false
-    segmentControlImage.displayBottomLine = false
+    segmentControlImage.displaySeparator = false
     
     segmentControlImage.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgroundColor: UIColor(named:UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.1))
     return segmentControlImage
@@ -112,13 +112,7 @@ class MainViewController: UIViewController {
     navigationView.addSubview(segmentControl)
     navigationViewBottom.addSubview(segmentControlImage)
   }
-  
-  override func viewDidLayoutSubviews() {
-    super.viewDidLayoutSubviews()
-    
-    segmentControl.updateControlConstraints()
-    segmentControlImage.updateControlConstraints()
-  }
+
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if let pageViewController = segue.destinationViewController as? PageViewController {
