@@ -43,16 +43,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 // create ASSliderSegmentControl with titles
 lazy var segmentControl: ASSliderSegmentControl = {
     let segmentControl = ASSliderSegmentControl(frame:
-      CGRect(
-        x: 0,
-        y: 0,
-        width:
-        self.view.bounds.width,
-        height: self.navigationView.bounds.height),
-                                                titleItems: [
-                                                  "Discover",
-                                                  "Home",
-                                                  "Settings"
+      CGRect( x: 0, y: 0, width: self.view.bounds.width, height: self.navigationView.bounds.height),
+        titleItems: [
+            "Discover",
+            "Home",
+            "Settings"
       ])
     return segmentControl
   }()
@@ -63,12 +58,7 @@ lazy var segmentControl: ASSliderSegmentControl = {
 // create ASSliderSegmentControl with images
 lazy var segmentControlImage: ASSliderSegmentControl = {
    let segmentControl = ASSliderSegmentControl(frame:
-   CGRect(
-   x: 0,
-   y: 0,
-   width:
-   self.view.bounds.width,
-   height: self.navigationView.bounds.height),
+   CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.navigationView.bounds.height),
         imageItems: [
              UIImage(named: "search")!,
              UIImage(named: "home")!,
@@ -91,13 +81,13 @@ navigationView.addSubview(segmentControl)
 #### Customize control appearance
 ```swift
 // remove buttom line 
-segmentControl.isButtomLine = false
+segmentControl.displayBottomLine = false
 
 // remove selected line 
 segmentControl.isSelectorLine = false 
  
 //Customize control appearance
-segmentControl.changeControlStyle (
+segmentControl.setAppearance (
           UIColor.clearColor(),
           selectedBackgroundColor: UIColor.clearColor(),
           textColor: UIColor(named: UIColor.AppColor.LinkWater).colorWithAlphaComponent(0.3),
@@ -117,24 +107,10 @@ segmentControl.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgr
 #### Customize UI
 ```swift
 // To react control's selector on page scrolling 
-func moveSegmentSelector(scrollView: UIScrollView) {
-    let translation = scrollView.panGestureRecognizer.translationInView(self.view)
-    var scrollDirection: HorizontalScrollDirection
-    if translation.x > 0 {
-      scrollDirection = HorizontalScrollDirection.Back
-    } else {
-      scrollDirection = HorizontalScrollDirection.Forward
-    }
-    
-    if scrollView.contentOffset.x != sWidth {
-      var scrollX = scrollView.contentOffset.x - sWidth
-      if scrollDirection == HorizontalScrollDirection.Back {
-        scrollX = scrollView.contentOffset.x
-    }
-    
-    segmentControl.moveSelectorByScrollPosition(scrollX, index: currentViewIndex.rawValue, scrollDirection: scrollDirection)
-    }
+  func pageViewController(pageViewController: PageViewController, didUpdateScroll scrollView: UIScrollView) {
+    segmentControl.moveSelectorLine(scrollView, targetView: view)
   }
+
 ```
 
 #### Update Contraints
