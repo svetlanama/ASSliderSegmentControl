@@ -111,8 +111,14 @@ class MainViewController: UIViewController {
     
     navigationView.addSubview(segmentControl)
     navigationViewBottom.addSubview(segmentControlImage)
+    segmentControl.updateControlConstraints()
   }
 
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    //segmentControl.updateControlConstraints()
+  }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if let pageViewController = segue.destinationViewController as? PageViewController {
