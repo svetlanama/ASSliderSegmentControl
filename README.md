@@ -112,7 +112,17 @@ segmentControl.changeBackgroundControlStyle(UIColor.clearColor(), selectedBackgr
   }
 
 ```
+#### Update contraint 
+```swift
+// Additionaly if it need you can update constraints manually
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    segmentControl.updateControlConstraints()
+  }
 
+```
+ 
 ## Author
 
 https://github.com/alexnodejs
